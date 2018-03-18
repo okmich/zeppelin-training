@@ -1,0 +1,16 @@
+# download zeppelin with all interpreters installed
+wget http://www-eu.apache.org/dist/zeppelin/zeppelin-0.7.3/zeppelin-0.7.3-bin-all.tgz .
+wget http://www-eu.apache.org/dist/zeppelin/zeppelin-0.7.3/zeppelin-0.7.3-bin-netinst.tgz .
+# extract the binary
+tar xvfz zeppelin-0.7.3-bin-all.tgz 
+# extract the binary
+tar xvfz zeppelin-0.7.3-bin-netinst.tgz 
+# copy to your preferred location
+sudo mv zeppelin-0.7.3-bin-all /opt/
+sudo mv zeppelin-0.7.3-bin-netinst /opt/
+# startup the server
+/opt/zeppelin-0.7.3-bin-all/bin/zeppelin-daemon.sh start
+
+# note that all logs are written to /opt/zeppelin-0.7.3-bin-all/logs
+
+# on successful start go to the browser location : http://server-name:8080

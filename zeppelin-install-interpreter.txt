@@ -1,0 +1,18 @@
+
+# to list all the available interpreter in the default repo for zeppelin
+$ZEPPELIN_HOME/bin/install-interpreter.sh --list
+
+# to install an interpreter use the command
+zeppelin-0.7.3-bin-netinst/bin/install-interpreter.sh --name md
+
+# to install more than one interpreter, use the command
+zeppelin-0.7.3-bin-netinst/bin/install-interpreter.sh --name python,jdbc
+
+# to install all available interpreters in the default repo
+zeppelin-0.7.3-bin-netinst/bin/install-interpreter.sh --all
+
+# to get all the argument options for install-interpreter
+zeppelin-0.7.3-bin-netinst/bin/install-interpreter.sh --help
+
+# to use the interpreter, it is mandatory to restart zeppelin once it has been installed
+zeppelin-0.7.3-bin-netinst/bin/zeppelin-daemon.sh restart
